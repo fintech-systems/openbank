@@ -4,7 +4,7 @@ OpenBank is a bank statement description aggregation service and API
 
 ## Why?
 
-"Bank statements are notoriously difficult to read." - Anon
+_"Bank statements are notoriously difficult to read."_ - Anon
 
 Banks used to have mainframes. So now the whole financial industry is trapped in short and non-sensical descriptions when it comes to the description bank statements.
 
