@@ -42,7 +42,14 @@ Other notes about this transaction:
 
 ## Roadmap
 
-- The creation of the OpenBank website
+- Display Social Login type on profile
+- Fix Nova permissions so that it's visible for everyone
+- Implement policies so that nobody can delete user
+- Change Nova URL from /nova to /admin
+
+## Milestones
+
+- First iteration of the alpha website
 
 ## Changelog
 
