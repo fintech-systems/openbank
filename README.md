@@ -54,6 +54,7 @@ Other notes about this transaction:
 - Make mailto and telto links on about
 - Random encrypt password for Socialite
 - Link openbank-api.com to site and remove fintech references
+- When you submit a contact form, the green is the wrong colour
 
 ## Milestones
 
