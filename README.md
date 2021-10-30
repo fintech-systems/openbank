@@ -6,23 +6,25 @@ OpenBank is a bank statement description aggregation service and API
 
 _"Bank statements are notoriously difficult to read."_ - Anon
 
-Banks used to have mainframes. So now the whole financial industry is trapped in short and non-sensical descriptions when it comes to the description bank statements.
+Banks used to have mainframes. So now the whole financial industry is trapped in short and non-sensical descriptions when it comes to line item descriptions on bank statements.
 
-OpenBank strives to provide a central source using an open platform where anybody can submit descriptions about their bank statements which can in turn help other people to quickly and easily decypher their data.
+The banking system tries to alleviate this problem by providing categories for transactions - however - these categories aren't very accurate at all because there are too many permutations and different ways of spending your money and what exactly is possible.
 
-## Schema description
+The OpenBank API strives to provide a central source using an open platform where anybody can submit descriptions about their bank statements which can in turn help other people to quickly and easily decypher their data.
 
-The schema consists of `Patterns`, `Tags`, and `Entities`.
+## Solution
+
+The API schema consists of `Patterns`, `Tags`, and `Entities`.
 
 - `Patterns` are the actual descriptions on your bank statement.
 - `Tags` is a way of grouping related transactions. It's similar to categories but more powerful because it's a many to many relationship instead a one to many relationship
-- `Entities` are both people who you pay, and people who pay you. It's a broad term for the beneficiery in the case of you having paid someone, but could also be a party that gave you money. `Entities` can be businesses, people, your creditors, and your customers.
+- `Entities` are both people who you pay, and people who pay you. It's a broad term for the beneficiery in the case of you having paid someone, but could also be a party that gave you money. `Entities` can be persons, businesses, your creditors, customers, etc.
 
 ### Example
 
-This example strive to explain the terms:
+This example strives to explain the terms:
 
-On your statement you see this:
+On a bank account statement you might see this:
 
 ```
 25 Oct WINCH MOTORS 5123*6543 21 OCT - 83.40
@@ -30,9 +32,10 @@ Cheque card purchase
 ```
 
 The `Pattern` that is matched in this case is `WINCH MOTORS`
-The `Entity`, also known as friendly name, is `My Local Garage`
 
-Since we can both put petrol in at our local garage and buy sweets attaching an tag is complicated. The goal of OpenBank is to attach `Tags` only when the option is clear.
+The `Entity`, written in a more friendly name, is `My Local Fuel Station`
+
+Since we can both re-fuel at our local fuel station and buy sweets at their shop, attaching an tag is complicated. The goal of OpenBank is to automatically assign a`Tags` only when the option is clear but still allow the end-user to tag the transaction with another category.
 
 Other notes about this transaction:
 
@@ -63,6 +66,8 @@ Other notes about this transaction:
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+Based on https://keepachangelog.com/en/1.0.0/
 
 ## Contributing
 
