@@ -45,18 +45,9 @@ Other notes about this transaction:
 
 ## Roadmap
 
-- Remove vanilla biolerplate on Welcome and Jetstream boiler on Dashboard
-- Get brand logo in Jetstream
-- When you're logged into the application, /contact /about etc must change to Logout
 - Display Social Login type on profile
-- Fix Nova permissions so that it's visible for everyone
-- Implement policies so that nobody can delete user
-- Change Nova URL from /nova to /admin
-- Add contact to dashboard and unify design
 - Flesh out more of the About page to describe the basic API
 - Make mailto and telto links on about
-- Random encrypt password for Socialite
-- Link openbank-api.com to site and remove fintech references
 - When you submit a contact form, the green is the wrong colour
 
 ## Milestones
